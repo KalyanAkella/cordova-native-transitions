@@ -5,6 +5,7 @@ angular.module('yoDemoApp')
     $scope.message = 'AngularJS is amazing !!!';
 
     $scope.goBack = function () {
+      window.plugins.NativeNavigator.transition(false);
       window.history.back();
     };
   });

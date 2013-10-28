@@ -35,8 +35,8 @@ var app = {
     onDeviceReady: function() {
         (function (cordova) {
             function NativeNavigator() {}
-            NativeNavigator.prototype.transition = function () {
-                cordova.exec(function () {}, function () {}, "NativeNavigator", "transition", []);
+            NativeNavigator.prototype.transition = function (forward) {
+                cordova.exec(function () {}, function () {}, "NativeNavigator", "transition", [forward]);
             };
             if (!window.plugins) window.plugins = {};
             window.plugins.NativeNavigator = new NativeNavigator();

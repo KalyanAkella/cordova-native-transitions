@@ -9,7 +9,7 @@ angular.module('yoDemoApp')
     };
 
     $scope.transition = function() {
-      window.plugins.NativeNavigator.transition();
+      window.plugins.NativeNavigator.transition(true);
     };
   }]
 );
