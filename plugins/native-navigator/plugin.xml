@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="native-navigator"
+        version="0.0.1">
+    <name>NativeNavigator</name>
+    <description>NativeNavigator plugin description</description>
+
+    <platform name="ios">
+        <header-file src="NativeNavigator.h"/>
+        <source-file src="NativeNavigator.m"/>
+        <config-file target="config.xml" parent="/widget">
+            <feature name="NativeNavigator">
+                <param name="ios-package" value="NativeNavigator"/>
+                <param name="onload" value="true"/>
+            </feature>
+        </config-file>
+    </platform>
+</plugin>
